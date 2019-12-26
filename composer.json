@@ -1,0 +1,30 @@
+{
+    "name": "andiwijaya/web-cache",
+    "description": "Web cache",
+    "license": "MIT",
+    "keywords": [ "andiwijaya" ],
+    "authors": [
+        {
+            "name": "Andi Wijaya",
+            "email": "andyv4@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "laravel/framework": "5.8.*",
+        "ixudra/curl": "^6.18",
+        "jenssegers/agent": "^2.6"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Andiwijaya\\WebCache\\WebCacheServiceProvider"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Andiwijaya\\WebCache\\": "src/"
+        }
+    }
+}
